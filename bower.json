@@ -1,5 +1,5 @@
 {
-  "name": "angular1Es6Sample",
+  "name": "app",
   "version": "0.0.0",
   "dependencies": {
     "angular-animate": "~1.5.3",

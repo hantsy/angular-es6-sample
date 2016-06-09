@@ -47,7 +47,7 @@ module.exports = function(config) {
 
     ngHtml2JsPreprocessor: {
       stripPrefix: conf.paths.src + '/',
-      moduleName: 'angular1Es6Sample'
+      moduleName: 'app'
     },
 
     logLevel: 'WARN',
