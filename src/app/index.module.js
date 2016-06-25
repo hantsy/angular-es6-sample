@@ -3,11 +3,10 @@
 import { config } from './index.config';
 import { routerConfig } from './index.route';
 import { runBlock } from './index.run';
-import { MainController } from './main/main.controller';
-import { NavbarDirective } from '../app/components/navbar/navbar.directive';
-import { MalarkeyDirective } from '../app/components/malarkey/malarkey.directive';
 
 import './service';
+import './components';
+import './main';
 
 const requires = [
   'ngAnimate',
@@ -20,7 +19,9 @@ const requires = [
   'ui.router',
   'ngMaterial',
   'toastr',
-  'app.service'
+  'app.service',
+  'app.components',
+  'app.main'
 ];
 
 angular.module('app', requires)
@@ -28,8 +29,5 @@ angular.module('app', requires)
   .constant('moment', moment)
   .config(config)
   .config(routerConfig)
-  .run(runBlock)
+  .run(runBlock);
 
-  .controller('MainController', MainController)
-  .directive('acmeNavbar', NavbarDirective)
-  .directive('acmeMalarkey', MalarkeyDirective);
