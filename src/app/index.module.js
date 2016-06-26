@@ -1,10 +1,11 @@
 /* global malarkey:false, moment:false */
 
-import { config } from './index.config';
-import { routerConfig } from './index.route';
-import { runBlock } from './index.run';
+import { AppConfig } from './config/app.config';
+import { AppConstants } from './config/app.constants';
+import { AppRun } from './config/app.run';
 
 import './service';
+import './layout';
 import './components';
 import './main';
 
@@ -20,14 +21,19 @@ const requires = [
   'ngMaterial',
   'toastr',
   'app.service',
+  'app.layout',
   'app.components',
   'app.main'
 ];
 
-angular.module('app', requires)
+window.app = angular.module('app', requires)
   .constant('malarkey', malarkey)
   .constant('moment', moment)
-  .config(config)
-  .config(routerConfig)
-  .run(runBlock);
+  .constant('AppConstants', AppConstants)
+  .config(AppConfig)
+  .run(AppRun);
+
+angular.bootstrap(document, ['app'], {
+  strictDi: true
+});
 
