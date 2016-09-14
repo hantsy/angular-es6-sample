@@ -1,0 +1,47 @@
+<div class="page-header">
+  <h1>{{$ctrl.post.title}} <small>{{$ctrl.post.createdAt}}</small></h1>
+</div>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <p>
+      {{$ctrl.post.content}}
+    </p>
+  </div>
+  <div class="panel-footer">
+    back to <a href="#" ui-sref="posts">{{'post-list'}}</a>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    Comments &bull;
+  </div>
+  <div class="panel-body">
+    <div class="media" ng-repeat="c in $ctrl.comments">
+      <div class="media-left media-top">
+        <a href="#">
+          <img class="media-object" src="..." alt="...">
+        </a>
+      </div>
+      <div class="media-body">
+        <h6 class="media-heading">{{c.createdAt}}</h6>
+        <p> {{c.content}}</p>
+      </div>
+    </div>
+
+    <form id="form" name="form" class="form" ng-submit="$ctrl.save()" novalidate>
+      <div class="form-group" ng-class="{'has-error':form.content.$invalid && !form.content.$pristine}">
+        <label class="control-label" for="content">{{'comment-content'}} *</label>
+        <textarea class="form-control" type="content" name="content" id="content" ng-model="$ctrl.data.content" rows="8" required ng-minlength="10">
+        </textarea>
+        <div class="help-block" ng-messages="form.content.$error" ng-if="form.content.$invalid && !form.content.$pristine">
+          <p ng-message="required">Comment is required</p>
+          <p ng-message="minlength">At least 10 chars</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-success btn-lg" ng-disabled="form.$invalid || form.$pending">  {{'save'}}
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

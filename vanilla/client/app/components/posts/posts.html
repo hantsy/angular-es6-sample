@@ -1,0 +1,41 @@
+<div class="page-header">
+  <h1>{{ $ctrl.name }}</h1>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="row">
+      <div class="col-md-9">
+        <form class="form-inline" ng-submit="$ctrl.search()">
+          <div class="form-group">
+            <input type="text" name="q" class="form-control" ng-model="$ctrl.q" />
+          </div>
+          <button type="submit" class="btn btn-default">search</button>
+        </form>
+      </div>
+      <div class="col-md-3">
+        <span class="pull-right">
+        <a href="" class="btn btn-success" ui-sref="new-post">new-post</a>
+    </span>
+      </div>
+    </div>
+  </div>
+<div class="panel-body">
+    <table class="table table-bordered table-hover">
+      <tr>
+        <th width="10px">#</th>
+        <th>{{'title'}}</th>
+        <th>{{'createdAt'}}</th>
+        <th width="100px "></th>
+      </tr>
+      <tr ng-repeat="post in $ctrl.posts ">
+        <td>{{$index}}</td>
+        <td>{{post.title}}</td>
+        <td>{{post.createdAt}}</td>
+        <td>
+          <a href="# " ui-sref="edit-post({id: post.id})">edit</a>
+          <a href="# " ui-sref="view-post({id: post.id})">view</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
