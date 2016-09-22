@@ -1,25 +1,48 @@
 class PostDetailController {
-  constructor($stateParams) {
+  constructor(Post, $stateParams) {
     'ngInject';
-    this._params=$stateParams;
+
+    this._Post = Post;
+    this.id = $stateParams.id;
     this.post = {};
-    this.comments=[];
+    this.comments = [];
+    this.newComment = {
+      content: ''
+    };
   }
 
   $onInit() {
-    console.log("initializing Post...");
-    this.post =
-      { id: 1, title: 'My first Post', content: 'Content of my first Post', createdAt: '2016-9-14' };
+    console.log("initializing Post Details...");
 
-    this.comments =[
- { id: 1, content: 'comment 1 of my first Post', createdAt: '2016-9-14' },
- { id: 2, content: 'comment 2 of my first Post', createdAt: '2016-9-14' }
-    ];
-
+    this._Post.getWithComments(this.id)
+      .then(
+      (res) => {
+        this.post = res.post;
+        this.comments = res.comments
+      }
+      );
   }
 
   $onDestroy() {
     console.log("destroying Post...");
+  }
+
+  onSaveComment() {
+    console.log("saving comment...@");
+    this._Post.saveComment(this.id, this.newComment)
+      .then((res) => {
+        //refresh comments by post.
+        console.log('saved comment.');
+        this._Post.getCommentsByPost(this.id)
+          .then(
+          (res) => {
+            this.comments = res;
+            this.newComment = {
+              content: ''
+            };
+          }
+          );
+      });
   }
 
 }

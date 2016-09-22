@@ -1,19 +1,26 @@
 class NewPostController {
-  constructor() {
+  constructor(Post, $state) {
     'ngInject';
-    this.data = {title:'', content:''};
+
+    this._Post = Post;
+    this._$state = $state;
+    this.data = { title: '', content: '' };
   }
 
   $onInit() {
-    console.log("initializing Post...");
+    console.log("initializing NewPost...");
   }
 
   $onDestroy() {
-    console.log("destroying Post...");
+    console.log("destroying NewPost...");
   }
 
-  save(){
-    console.log("saving data @"+ this.data);
+  save() {
+    console.log("saving data @" + this.data);
+    this._Post.save(this.data)
+      .then((res) => {
+        this._$state.go('app.posts');
+      })
   }
 
 }

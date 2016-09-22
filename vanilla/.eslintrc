@@ -1,6 +1,9 @@
 {
   "extends": "eslint:recommended",
-  "plugins": ["angular"],
+  "sourceType": "module",
+  "plugins": [
+    "angular"
+  ],
   "env": {
     "es6": true,
     "browser": true,

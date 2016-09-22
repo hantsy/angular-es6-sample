@@ -34,6 +34,32 @@ class Post {
 
   }
 
+  // Creates or updates an post
+  saveComment(postId, comment) {
+
+    let request = {};
+
+    // If there's a id, perform an update via PUT w/ post's id
+    if (comment.id) {
+      request.url = `${this._AppConstants.api}/posts/${postId}/comments/${comment.id}`;
+      request.method = 'PUT';
+      // Delete the id from the post to ensure the server updates the id,
+      // which happens if the title of the post changed.
+      delete comment.id;
+
+      // Otherwise, this is a new post POST request
+    } else {
+      request.url = `${this._AppConstants.api}/posts/${postId}/comments`;
+      request.method = 'POST';
+    }
+
+    // Set the post data in the data attribute of our request
+    request.data = comment;
+
+    return this._$http(request);
+
+  }
+
   get(id) {
 
     let deferred = this._$q.defer();
@@ -47,9 +73,43 @@ class Post {
       method: 'GET'
     })
       .then(
-      (res) => deferred.resolve(res.data.post),
+      (res) => deferred.resolve(res.data),
       (err) => deferred.reject(err)
       );
+    return deferred.promise;
+  }
+
+  getCommentsByPost(id) {
+
+    let deferred = this._$q.defer();
+
+    if (!id.replace(" ", "")) {
+      deferred.reject("post id is empty");
+      return deferred.promise;
+    }
+    this._$http({
+      url: this._AppConstants.api + '/posts/' + id + '/comments',
+      method: 'GET'
+    })
+    .then(
+      (res) => deferred.resolve(res.data),
+      (err) => deferred.reject(err)
+    );
+    return deferred.promise;
+  }
+
+  getWithComments(id) {
+    let deferred = this._$q.defer();
+    this._$q.all([
+      this.get(id),
+      this.getCommentsByPost(id)
+    ])
+    .then(
+      (res) => {
+        deferred.resolve({ post: res[0], comments: res[1] })
+      }
+    );
+
     return deferred.promise;
   }
 
@@ -61,33 +121,39 @@ class Post {
     });
   }
 
-  // Favorite an post
-  favorite(id) {
-    return this._$http({
-      url: this._AppConstants.api + '/posts/' + id + '/favorite',
-      method: 'POST'
-    });
-  }
+  // // Favorite an post
+  // favorite(id) {
+  //   return this._$http({
+  //     url: this._AppConstants.api + '/posts/' + id + '/favorite',
+  //     method: 'POST'
+  //   });
+  // }
 
-  // Unfavorite an post
-  unfavorite(id) {
-    return this._$http({
-      url: this._AppConstants.api + '/posts/' + id + '/favorite',
-      method: 'DELETE'
-    });
-  }
+  // // Unfavorite an post
+  // unfavorite(id) {
+  //   return this._$http({
+  //     url: this._AppConstants.api + '/posts/' + id + '/favorite',
+  //     method: 'DELETE'
+  //   });
+  // }
 
 
   query(keyword) {
-
+    let deferred = this._$q.defer();
     // Create the $http object for this request
     let request = {
       url: this._AppConstants.api + '/posts',
       method: 'GET',
       params: !!keyword ? { 'q': keyword } : null
     };
-    return this._$http(request)
-      .then((res) => res.data);
+
+    this._$http(request)
+      .then(
+        (res) => deferred.resolve(res.data),
+        (err) => deferred.reject(err)
+      );
+
+    return deferred.promise;
   }
 }
 

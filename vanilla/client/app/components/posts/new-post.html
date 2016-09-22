@@ -5,19 +5,19 @@
   <div class="panel-body">
     <form id="form" name="form" class="form" ng-submit="$ctrl.save()" novalidate>
       <div class="form-group" ng-class="{'has-error':form.title.$invalid && !form.title.$pristine}">
-        <label class="control-label" for="title">{{'title'}} *</label>
+        <label class="form-control-label" for="title">{{'title'}} *</label>
         <input class="form-control" id="title" name="title" ng-model="$ctrl.data.title" required/>
-        <div class="help-block" ng-messages="form.title.$error" ng-if="form.title.$invalid && !form.title.$pristine">
+        <div class="form-control-feedback" ng-messages="form.title.$error" ng-if="form.title.$invalid && !form.title.$pristine">
           <p ng-message="required">Post Title is required</p>
         </div>
       </div>
       <div class="form-group" ng-class="{'has-error':form.content.$invalid && !form.content.$pristine}">
-        <label class="control-label" for="content">{{'content'}} *</label>
+        <label class="form-control-label" for="content">{{'content'}} *</label>
 
         <textarea class="form-control" type="content" name="content" id="content" ng-model="$ctrl.data.content" rows="8" required ng-minlength="10">
 
         </textarea>
-        <div class="help-block" ng-messages="form.content.$error" ng-if="form.content.$invalid && !form.content.$pristine">
+        <div class="form-control-feedback" ng-messages="form.content.$error" ng-if="form.content.$invalid && !form.content.$pristine">
           <p ng-message="required">Post Content is required</p>
           <p ng-message="minlength">At least 10 chars</p>
         </div>
@@ -30,6 +30,6 @@
     </form>
   </div>
   <div class="panel-footer">
-    back to <a href="#" ui-sref="posts">{{'post-list'}}</a>
+    back to <a href="#" ui-sref="app.posts">{{'post-list'}}</a>
   </div>
 </div>

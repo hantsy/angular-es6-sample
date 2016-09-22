@@ -1,29 +1,31 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
+import commonSevices from '../../common/services/';
 import postsComponent from './posts.component';
 import postDetailComponent from './post-detail.component';
 import newPostComponent from './new-post.component';
 import editPostComponent from './edit-post.component';
 
-let postsModule = angular.module('posts', [
-  uiRouter
-])
+let postsModule = angular.module('posts', [commonSevices, uiRouter])
   .config(($stateProvider) => {
     "ngInject";
     $stateProvider
-      .state('posts', {
+      .state('app.posts', {
         url: '/posts',
-        component: 'posts'
+        component: 'posts',
+        data: {
+          requiresAuth: false
+        }
       })
-      .state('view-post', {
+      .state('app.view-post', {
         url: '/post-detail/:id',
         component: 'postDetail'
       })
-      .state('edit-post', {
+      .state('app.edit-post', {
         url: '/edit-post/:id',
         component: 'editPost'
       })
-      .state('new-post', {
+      .state('app.new-post', {
         url: '/new-post',
         component: 'newPost'
       });

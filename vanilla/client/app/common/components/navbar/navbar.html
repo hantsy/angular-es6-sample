@@ -1,22 +1,16 @@
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-fixed-top navbar-light bg-faded" style="background-color: #e3f2fd;">
   <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" ui-sref="home" href="#"><i class="fa fa-home"></i>ANGULAR ES6</a>
-    </div>
-
+    <a class="navbar-brand" ui-sref="app.home" href="#"><i class="fa fa-home"></i>ANGULAR ES6</a>
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+    &#9776;
+  </button>
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
+
       <ul class="nav navbar-nav">
-        <li ui-sref-active="active"><a href="#" ui-sref="posts">{{'posts'}}</a></li>
-        <li ui-sref-active="active"><a href="#" ui-sref="new-post">{{'new-post'}}</a></li>
-        <li ui-sref-active="active"><a href="#" ui-sref="about">{{'about'}}</a></li>
+        <li class="nav-item" ui-sref-active="active"><a class="nav-link" href="#" ui-sref="app.posts">{{'posts'}}</a></li>
+        <li class="nav-item" ui-sref-active="active"><a class="nav-link" href="#" ui-sref="app.new-post">{{'new-post'}}</a></li>
+        <li class="nav-item" ui-sref-active="active"><a class="nav-link" href="#" ui-sref="app.about">{{'about'}}</a></li>
         <!--<li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -36,10 +30,11 @@
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
       </form>-->
-      <ul class="nav navbar-nav navbar-right">
-        <li><button class="btn btn-success navbar-btn" ng-click="$ctrl.onSignin()">{{'signin'}}</button></li>
-        <li><span class="navbar-text"><a href="#" ui-sref="signup">{{'signup'}}</a></span></li>
-        <li><button type="button" class="btn navbar-btn btn-danger"  ng-click="$ctrl.onLogout()">{{'logout'}}</button></span>
+      <ul class="nav navbar-nav pull-md-right">
+        <li class="nav-item" show-authed="false"><button class="btn btn-outline-success" ng-click="$ctrl.onSignin()">{{'signin'}}</button></li>
+        <li class="nav-item" show-authed="false"><a class="nav-link" href="#" ui-sref="app.signup">{{'signup'}}</a></span>
+        </li>
+        <li class="nav-item" show-authed="true"><button type="button" class="btn btn-outline-danger" ng-click="$ctrl.onLogout()">{{'logout'}}</button></span>
         </li>
         <!--<li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -52,8 +47,9 @@
           </ul>
         </li>-->
       </ul>
+
+      <!-- /.navbar-collapse -->
     </div>
-    <!-- /.navbar-collapse -->
   </div>
   <!-- /.container-fluid -->
 </nav>
