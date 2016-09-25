@@ -29,19 +29,7 @@ function AppRun(Auth, $rootScope, $state, $trace, $uiRouter, $transitions) {
     var _Auth = trans.injector().get('Auth');
 
     _Auth.ensureAuthIs(true);
-    // If the user is not authenticated
-    // if (!MyAuthService.isAuthenticated()) {
 
-    //   // Then return a promise for a successful login.
-    //   // The transition will wait for this promise to settle
-
-    //   return MyAuthService.authenticate().catch(function () {
-
-    //     // If the authenticate() method failed for whatever reason,
-    //     // redirect to a 'guest' state which doesn't require auth.
-    //     return $state.target("guest");
-    //   });
-    // }
   });
 
 };

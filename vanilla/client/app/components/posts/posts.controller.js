@@ -15,10 +15,10 @@ class PostsController {
     //   { id: 2, title: 'My second Post', content: 'Content of my second Post', createdAt: '2016-9-14' },
     //   { id: 3, title: 'My third Post', content: 'Content of my third Post', createdAt: '2016-9-14' },
     // ]
-    this.doSearch();
+    this.searchPosts();
   }
 
-  doSearch() {
+  searchPosts() {
     this._Post
       .query(this.q)
       .then(
@@ -32,7 +32,7 @@ class PostsController {
 
   search() {
     console.log("query posts by keyword" + this.q);
-    this.doSearch();
+    this.searchPosts();
   }
 }
 

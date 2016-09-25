@@ -1,8 +1,8 @@
-<div class="page-header">
+<!--<div class="page-header">
   <h1 class="text-xs-center text-uppercase text-justify">
     {{$ctrl.post.title}}
   </h1>
-  <h6 class="text-xs-center text-muted">{{$ctrl.post.createdAt|date:'short'}}</h6>
+  <p class="text-xs-center text-muted">{{$ctrl.post.createdAt|date:'short'}}</p>
 </div>
 <div class="card">
   <div class="card-block">
@@ -13,11 +13,9 @@
   <div class="card-footer">
     back to <a href="#" ui-sref="app.posts">{{'post-list'}}</a>
   </div>
-</div>
-<div class="card">
-  <div class="card-header">
-    Comments &bull;
-  </div>
+</div>-->
+<post-detail-card post="$ctrl.post"></post-detail-card>
+<!--<div class="card" ng-if="$ctrl.comments">
   <div class="card-block">
     <div class="media" ng-repeat="c in $ctrl.comments">
       <div class="media-left media-top">
@@ -26,25 +24,14 @@
         </a>
       </div>
       <div class="media-body">
-        <h6 class="media-heading">{{c.createdAt}}</h6>
+        <h6 class="media-heading">{{c.createdBy}} &bull; {{c.createdAt}}</h6>
         <p> {{c.content}}</p>
       </div>
     </div>
-
-    <form id="form" name="form" class="form" ng-submit="$ctrl.onSaveComment()" novalidate>
-      <div class="form-group" ng-class="{'has-danger':form.content.$invalid && !form.content.$pristine}">
-        <label class="form-control-label" for="content">{{'comment-content'}} *</label>
-        <textarea class="form-control" type="content" name="content" id="content" ng-model="$ctrl.newComment.content" rows="8" required ng-minlength="10">
-        </textarea>
-        <div class="form-control-feedback" ng-messages="form.content.$error" ng-if="form.content.$invalid && !form.content.$pristine">
-          <p ng-message="required">Comment is required</p>
-          <p ng-message="minlength">At least 10 chars</p>
-        </div>
-      </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-success btn-lg" ng-disabled="form.$invalid || form.$pending">  {{'save'}}
-        </button>
-      </div>
-    </form>
   </div>
-</div>
+</div>-->
+
+<post-comment-list comments="$ctrl.comments"></post-comment-list>
+
+<post-comment-form on-save-comment="$ctrl.saveComment($event)"></post-comment-form>
+

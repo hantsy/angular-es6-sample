@@ -1,8 +1,10 @@
 class PostDetailController {
-  constructor(Post, $stateParams) {
+  constructor(Post, $stateParams, toastr, $q) {
     'ngInject';
 
     this._Post = Post;
+    this._toastr = toastr;
+    this._$q = $q;
     this.id = $stateParams.id;
     this.post = {};
     this.comments = [];
@@ -16,10 +18,10 @@ class PostDetailController {
 
     this._Post.getWithComments(this.id)
       .then(
-      (res) => {
-        this.post = res.post;
-        this.comments = res.comments
-      }
+        (res) => {
+          this.post = res.post;
+          this.comments = res.comments
+        }
       );
   }
 
@@ -27,22 +29,24 @@ class PostDetailController {
     console.log("destroying Post...");
   }
 
-  onSaveComment() {
+  saveComment(event) {
     console.log("saving comment...@");
-    this._Post.saveComment(this.id, this.newComment)
+    let deferred = this._$q.defer();
+
+    this._Post.saveComment(this.id, event)
       .then((res) => {
         //refresh comments by post.
         console.log('saved comment.');
         this._Post.getCommentsByPost(this.id)
-          .then(
-          (res) => {
+          .then((res) => {
+            console.log('refresh comments list...');
             this.comments = res;
-            this.newComment = {
-              content: ''
-            };
-          }
-          );
+            this._toastr.success('Comment was added!');
+            deferred.resolve(res);
+          });
       });
+
+    return deferred.promise;
   }
 
 }

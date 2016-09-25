@@ -26,8 +26,7 @@ module.exports = {
       $: 'jquery',
       jquery: 'jquery',
       "Tether": 'tether',
-      "window.Tether": "tether",
-      "window.['ui-router-visualizer']": "ui-router-visualizer"
+      "window.Tether": "tether"
     }),
     // Injects bundles in your index.html instead of wiring all manually.
     // It also adds hash to all injected assets so we don't have problems
