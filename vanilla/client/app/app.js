@@ -9,6 +9,12 @@ import 'angular-toastr/dist/angular-toastr.css';
 import 'angular-messages';
 import 'angular-animate';
 import 'angular-touch';
+import 'angular-cookies';
+import 'angular-translate';
+import 'angular-translate-storage-cookie';
+import 'angular-translate-storage-local';
+import 'angular-translate-handler-log';
+import 'angular-translate-interpolation-messageformat';
 import uiRouter from 'angular-ui-router';
 import Common from './common/';
 import Components from './components/';
@@ -19,6 +25,8 @@ import AppConfig from './app.config';
 
 
 const requires = [
+  'pascalprecht.translate',
+  'ngCookies',
   'ngTouch',
   'ngMessages',
   'ngAnimate',

@@ -6,7 +6,7 @@ let footerModule = angular.module('app.common.components.footer', [
   uiRouter
 ])
 
-.component('app-footer', footerComponent)
+.component('appFooter', footerComponent)
 
 .name;
 

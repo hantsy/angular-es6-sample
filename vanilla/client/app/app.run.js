@@ -16,8 +16,8 @@ function AppRun(Auth, $rootScope, $state, $trace, $uiRouter, $transitions) {
 
   $trace.enable('TRANSITION');
 
-  //var vis = window['ui-router-visualizer'];
-  vis.visualizer($uiRouter);
+  //show the routing graph
+  //vis.visualizer($uiRouter);
 
   //processing auth redirecting
   $transitions.onStart({

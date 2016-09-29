@@ -1,10 +1,13 @@
+import en from './i18n.en.json';
+import zh from './i18n.zh.json';
+
 function jwtInterceptor(JWT, AppConstants, $window, $q) {
   'ngInject';
 
   return {
     // automatically attach Authorization header
     request: function (config) {
-      if (/*config.url.indexOf(AppConstants.api) === 0 &&*/ JWT.get()) {
+      if ( /*config.url.indexOf(AppConstants.api) === 0 &&*/ JWT.get()) {
         config.headers.Authorization = 'Bearer ' + JWT.get();
       }
       return config;
@@ -23,7 +26,7 @@ function jwtInterceptor(JWT, AppConstants, $window, $q) {
   };
 }
 
-function AppConfig($logProvider, toastrConfig, $httpProvider, $stateProvider, $locationProvider, $urlRouterProvider) {
+function AppConfig($logProvider, toastrConfig, $httpProvider, $stateProvider, $locationProvider, $urlRouterProvider, $translateProvider) {
   'ngInject';
 
   // Enable log
@@ -38,6 +41,19 @@ function AppConfig($logProvider, toastrConfig, $httpProvider, $stateProvider, $l
 
   $httpProvider.interceptors.push(jwtInterceptor);
 
+
+  // Adding a translation table for the English language
+  $translateProvider.translations('en', en);
+  // Adding a translation table for the Chinese language
+  $translateProvider.translations('zh', zh);
+  // Tell the module what language to use by default
+  $translateProvider.preferredLanguage('en');
+  // Tell the module to store the language in the local storage
+  $translateProvider.useLocalStorage();
+
+  $translateProvider.useMissingTranslationHandlerLog();
+  $translateProvider.useMessageFormatInterpolation();
+
   /*
     If you don't want hashbang routing, uncomment this line.
     Our tutorial will be using hashbang routing though :)
@@ -51,9 +67,9 @@ function AppConfig($logProvider, toastrConfig, $httpProvider, $stateProvider, $l
       component: 'app',
       data: {
         requiresAuth: true
-        // auth: function (Auth) {
-        //   return Auth.ensureAuthIs();
-        // }
+          // auth: function (Auth) {
+          //   return Auth.ensureAuthIs();
+          // }
       }
     });
 
