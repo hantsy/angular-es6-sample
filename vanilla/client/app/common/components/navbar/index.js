@@ -6,7 +6,7 @@ let navbarModule = angular.module('app.common.components.navbar', [
   uiRouter
 ])
 
-.component('navbar', navbarComponent)
+.component('appNavbar', navbarComponent)
 
 .name;
 

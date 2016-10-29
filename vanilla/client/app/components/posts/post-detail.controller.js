@@ -9,7 +9,7 @@ class PostDetailController {
     this.post = {};
     this.comments = [];
     this.newComment = {
-      content: ''
+      home: ''
     };
   }
 
