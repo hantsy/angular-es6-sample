@@ -1,13 +1,10 @@
-<footer>
-	<nav class="navbar navbar-fixed-bottom navbar-light bg-faded" style="background-color: #e3f2fd;">
-		<div class="container">
-			<div class="nav navbar-nav">
-				<div class="nav-item btn-group btn-group-sm" role="group">
-					<a class="btn" ng-class="($ctrl.isLanguage('zh')) ? 'btn-primary' : 'btn-secondary'" ng-click="$ctrl.setLanguage('zh')">中</a>
-					<a class="btn" ng-class="($ctrl.isLanguage('en')) ? 'btn-primary' : 'btn-secondary'" ng-click="$ctrl.setLanguage('en')">EN</a>
-				</div>
-				<div class="nav-item">Copyright: HantsyLabs</div>
-			</div>
-		</div>
-	</nav>
+<footer class="footer" style="background-color: #e3f2fd;">
+	<div class="container">
+		<p class="text-muted">
+			<div class="btn-group btn-group-sm" role="group">
+				<a class="btn" ng-class="($ctrl.isLanguage('zh')) ? 'btn-primary' : 'btn-secondary'" ng-click="$ctrl.setLanguage('zh')">中</a>
+				<a class="btn" ng-class="($ctrl.isLanguage('en')) ? 'btn-primary' : 'btn-secondary'" ng-click="$ctrl.setLanguage('en')">EN</a>
+			</div>   Copyright: HantsyLabs
+		</p>
+	</div>
 </footer>
