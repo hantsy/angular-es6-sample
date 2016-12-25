@@ -6,7 +6,4 @@ bower_components
 .settings
 *.log
 dist/
-/server
-/client
 
-/hello

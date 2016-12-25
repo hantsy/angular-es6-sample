@@ -1,0 +1,37 @@
+<!--<div class="page-header">
+  <h1 class="text-xs-center text-uppercase text-justify">
+    {{$ctrl.post.title}}
+  </h1>
+  <p class="text-xs-center text-muted">{{$ctrl.post.createdAt|date:'short'}}</p>
+</div>
+<div class="card">
+  <div class="card-block">
+    <p>
+      {{$ctrl.post.home}}
+    </p>
+  </div>
+  <div class="card-footer">
+    back to <a href="#" ui-sref="app.posts">{{'post-list'}}</a>
+  </div>
+</div>-->
+<post-detail-card post="$ctrl.post"></post-detail-card>
+<!--<div class="card" ng-if="$ctrl.comments">
+  <div class="card-block">
+    <div class="media" ng-repeat="c in $ctrl.comments">
+      <div class="media-left media-top">
+        <a href="#">
+          <img class="media-object" src="../" alt="...">
+        </a>
+      </div>
+      <div class="media-body">
+        <h6 class="media-heading">{{c.createdBy}} &bull; {{c.createdAt}}</h6>
+        <p> {{c.home}}</p>
+      </div>
+    </div>
+  </div>
+</div>-->
+
+<post-comment-list comments="$ctrl.comments"></post-comment-list>
+
+<post-comment-form on-save-comment="$ctrl.saveComment($event)"></post-comment-form>
+
