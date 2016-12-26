@@ -92,7 +92,13 @@
     "yargs": "^3.9.0"
   },
   "scripts": {
-    "test": "karma start"
+    "build": "gulp webpack",
+    "component": "gulp component",
+    "serve": "gulp serve",
+    "start": "gulp serve",
+    "test": "karma start",
+    "watch": "gulp serve",
+    "webpack": "gulp webpack"
   },
   "keywords": [
     "angular",
@@ -104,5 +110,14 @@
     "url": "https://github.com/angularclass/NG6-starter.git"
   },
   "author": "AngularClass",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "babel": {
+    "plugins": [
+      "transform-runtime"
+    ],
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  }
 }
