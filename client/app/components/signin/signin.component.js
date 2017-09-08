@@ -1,6 +1,6 @@
 import template from './signin.html';
 import controller from './signin.controller';
-import './signin.styl';
+import './signin.scss';
 
 let signinComponent = {
   restrict: 'E',

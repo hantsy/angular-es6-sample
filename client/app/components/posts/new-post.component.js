@@ -1,6 +1,6 @@
 import template from './new-post.html';
 import controller from './new-post.controller';
-import './new-post.styl';
+import './new-post.scss';
 
 let newPostComponent = {
   restrict: 'E',

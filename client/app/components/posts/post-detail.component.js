@@ -1,6 +1,6 @@
 import template from './post-detail.html';
 import controller from './post-detail.controller';
-import './post-detail.styl';
+import './post-detail.scss';
 
 let postDetailComponent = {
   restrict: 'E',

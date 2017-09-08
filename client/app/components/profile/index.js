@@ -1,5 +1,5 @@
 import angular from 'angular';
-import uiRouter from 'angular-ui-router';
+import uiRouter from '@uirouter/angularjs';
 import profileComponent from './profile.component';
 
 let profileModule = angular.module('profile', [

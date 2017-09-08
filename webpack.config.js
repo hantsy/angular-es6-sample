@@ -11,7 +11,7 @@ module.exports = {
       { test: /\.js$/, exclude: [/app\/lib/, /node_modules/], loader: 'babel' },
       { test: /\.html$/, loader: 'raw' },
       { test: /\.(scss|sass)$/, loader: 'style!css!sass' },
-      { test: /\.styl$/, loader: 'style!css!stylus' },
+    //  { test: /\.styl$/, loader: 'style!css!stylus' },
       { test: /\.json$/, loader: 'json' },
       { test: /\.css$/, loader: 'style!css' },
       { test: /\.(png|woff|woff2|eot|ttf|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url-loader?limit=100000' }
@@ -27,8 +27,9 @@ module.exports = {
       jQuery: 'jquery',
       $: 'jquery',
       jquery: 'jquery',
-      "Tether": 'tether',
-      "window.Tether": "tether"
+      Popper: 'popper.js/dist/umd/popper.js'
+      // "Tether": 'tether',
+      // "window.Tether": "tether"
     }),
     // Injects bundles in your index.html instead of wiring all manually.
     // It also adds hash to all injected assets so we don't have problems

@@ -1,5 +1,5 @@
 import angular from 'angular';
-import uiRouter from 'angular-ui-router';
+import uiRouter from '@uirouter/angularjs';
 import commonSevices from '../../common/services/';
 import postsComponent from './posts.component';
 import postDetailComponent from './post-detail.component';

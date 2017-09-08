@@ -9,13 +9,13 @@ class EditPostController {
   }
 
   $onInit() {
-    console.log("initializing Post...");
+    console.log("initializing :: EditPostController...");
     //this.data = { id: 1, title: 'post title', content: 'post content', createdAt: '2016-9-12' };
     this._Post.get(this.id).then((res) => this.data = res);
   }
 
   $onDestroy() {
-    console.log("destroying Post...");
+    console.log("destroying :: EditPostController...");
   }
 
   save() {

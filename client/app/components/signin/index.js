@@ -1,5 +1,5 @@
 import angular from 'angular';
-import uiRouter from 'angular-ui-router';
+import uiRouter from '@uirouter/angularjs';
 import commonSevices from '../../common/services/';
 import signinComponent from './signin.component';
 

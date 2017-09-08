@@ -1,6 +1,6 @@
 import template from './profile.html';
 import controller from './profile.controller';
-import './profile.styl';
+import './profile.scss';
 
 let profileComponent = {
   restrict: 'E',

@@ -1,4 +1,4 @@
-//import uiRouter from 'angular-ui-router';
+//import uiRouter from '@uirouter/angularjs';
 
 class NavbarController {
   constructor($scope) {

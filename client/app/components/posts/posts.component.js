@@ -1,6 +1,6 @@
 import template from './posts.html';
 import controller from './posts.controller';
-import './posts.styl';
+import './posts.scss';
 
 let postsComponent = {
   restrict: 'E',

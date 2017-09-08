@@ -1,0 +1,89 @@
+@import "common/common";
+.app {
+  height: 100%;
+  background-color: $lightBgColor;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-top: 80px;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+
+
+/* Not required for template or sticky footer method. */
+
+body>.container {
+  padding: 60px 15px 0;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer>.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.thumbnail {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #CE8982;
+}
+
+.meta,
+.meta-comments {
+  font-size: 12px color #333;
+  margin-bottom: 0;
+}
+
+.meta-comments {
+  font-weight: bold;
+}
+
+.jumbotron {
+  color: #333;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  -webkit-transition: linear 0.5s;
+  -moz-transition: linear 0.5s;
+  -o-transition: linear 0.5s;
+  transition: linear 0.5s;
+}
+
+.jumbotron h1 {
+  color: #333;
+  margin: 10px 0 10px 0;
+}
+
+.jumbotron small {
+  color :#999;
+}

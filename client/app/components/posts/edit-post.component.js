@@ -1,6 +1,6 @@
 import template from './edit-post.html';
 import controller from './edit-post.controller';
-import './edit-post.styl';
+import './edit-post.scss';
 
 let editPostComponent = {
   restrict: 'E',

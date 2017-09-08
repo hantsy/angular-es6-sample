@@ -1,6 +1,6 @@
 import template from './signup.html';
 import controller from './signup.controller';
-import './signup.styl';
+import './signup.scss';
 
 let signupComponent = {
   restrict: 'E',
