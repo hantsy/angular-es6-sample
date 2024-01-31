@@ -1,0 +1,858 @@
+repo_name: hantsy/angular-es6-sample
+report_id: 3fcfed4f36a7550edfb6149d94a31ba6
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-31T08:14:40+00:00'
+requested_by: hantsy
+provider: github
+branch: master
+detected_tools_count: 57
+tools:
+- name: ES6
+  description: The next version of JavaScript
+  website_url: http://www.ecma-international.org/ecma-262/6.0/
+  version: 6.24.1
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4109/16407404782_8b9c57eab3.jpg
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-09-14 09:02:07.000000000 Z
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/hantsy/angular-es6-sample
+  detection_source: Repo Metadata
+- name: Bootstrap
+  description: Simple and flexible HTML, CSS, and JS for popular UI components and
+    interactions
+  website_url: http://getbootstrap.com/
+  version: 4.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Front-End Frameworks
+  image_url: https://img.stackshare.io/service/1101/C9QJ7V3X.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2017-09-08 08:09:46.000000000 Z
+- name: Sass
+  description: Syntactically Awesome Style Sheets
+  website_url: http://sass-lang.com/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/1171/jCR2zNJV.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-09-14 09:02:07.000000000 Z
+- name: css-loader
+  description: Helps webpack to collect CSS from all the css files
+  website_url: https://github.com/webpack-contrib/css-loader
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: CSS Pre-processors / Extensions
+  image_url: https://img.stackshare.io/service/8074/default_d2b16fd6997fb2e164de645a34f9b8d5a880d999.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-10-29 05:36:15.000000000 Z
+- name: jQuery
+  description: The Write Less, Do More, JavaScript Library.
+  website_url: http://jquery.com/
+  version: 3.2.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1021/lxEKmMnB_400x400.jpg
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-12-25 11:19:25.000000000 Z
+- name: Babel
+  description: Use next generation JavaScript, today.
+  website_url: http://babeljs.io/
+  version: 6.26.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JavaScript Compilers
+  image_url: https://img.stackshare.io/service/2739/-1wfGjNw.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: ".babelrc"
+  last_updated_by: hantsy
+  last_updated_on: 2016-09-14 09:02:07.000000000 Z
+- name: Chai
+  description: A BDD / TDD assertion library
+  website_url: http://chaijs.com/
+  version: 3.5.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/1725/chai.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-09-14 09:02:07.000000000 Z
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/.eslintrc
+  detection_source: ".eslintrc"
+  last_updated_by: hantsy
+  last_updated_on: 2016-06-09 13:31:05.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample
+  detection_source: Repo Metadata
+- name: Karma
+  description: Spectacular Test Runner for JavaScript
+  website_url: http://karma-runner.github.io/
+  version: 0.13.22
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Browser Testing
+  image_url: https://img.stackshare.io/service/1420/TidYGd6a.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-12-26 02:43:41.000000000 Z
+- name: Mocha
+  description: Simple, flexible, fun javascript test framework for node.js &amp; the
+    browser
+  website_url: http://mochajs.org/
+  version: 2.5.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/832/mocha.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-09-14 09:02:07.000000000 Z
+- name: Webpack
+  description: A bundler for javascript and friends
+  website_url: http://webpack.js.org
+  version: 1.15.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JS Build Tools / JS Task Runners
+  image_url: https://img.stackshare.io/service/1682/IMG_4636.PNG
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-12-26 02:43:41.000000000 Z
+- name: gulp
+  description: The streaming build system
+  website_url: http://gulpjs.com/
+  version: 3.9.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JS Build Tools / JS Task Runners
+  image_url: https://img.stackshare.io/service/844/iruTC031.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-12-26 02:43:41.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-09-14 09:02:07.000000000 Z
+- name: Lodash
+  description: A JavaScript utility library
+  website_url: https://lodash.com
+  version: 3.10.1
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/2438/lodash.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-09-14 09:02:07.000000000 Z
+- name: angular
+  description: HTML enhanced for web apps
+  package_url: https://www.npmjs.com/angular
+  version: 1.6.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16174/default_351a89f21bfb241e8dabeb1444cf56f529948708.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2017-09-08 08:09:46.000000000 Z
+  vulnerabilities:
+  - name: Prototype Pollution in angular
+    cve_id: CVE-2019-10768
+    cve_url: https://github.com/advisories/GHSA-89mq-4x47-5v83
+    detected_date: Aug 22
+    severity: high
+    first_patched: 1.7.9
+  - name: angular vulnerable to regular expression denial of service via the $resource
+      service
+    cve_id: CVE-2023-26117
+    cve_url: https://github.com/advisories/GHSA-2qqx-w9hr-q5gx
+    detected_date: Apr 4
+    severity: moderate
+    first_patched: 
+  - name: angular vulnerable to regular expression denial of service via the angular.copy()
+      utility
+    cve_id: CVE-2023-26116
+    cve_url: https://github.com/advisories/GHSA-2vrf-hf26-jrp5
+    detected_date: Apr 4
+    severity: moderate
+    first_patched: 
+  - name: Angular (deprecated package) Cross-site Scripting
+    cve_id: CVE-2022-25869
+    cve_url: https://github.com/advisories/GHSA-prc3-vjfx-vhm9
+    detected_date: Jul 20
+    severity: moderate
+    first_patched: 
+  - name: XSS via JQLite DOM manipulation functions in AngularJS
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-5cp4-xmrw-59wf
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 1.8.0
+  - name: angular vulnerable to regular expression denial of service via the <input
+      type="url"> element
+    cve_id: CVE-2023-26118
+    cve_url: https://github.com/advisories/GHSA-qwqh-hm9m-p5hr
+    detected_date: Apr 4
+    severity: moderate
+    first_patched: 
+  - name: Cross site scripting in Angular
+    cve_id: CVE-2020-7676
+    cve_url: https://github.com/advisories/GHSA-mhp6-pxh8-r675
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 1.8.0
+- name: angular-animate
+  description: AngularJS module for animations
+  package_url: https://www.npmjs.com/angular-animate
+  version: 1.6.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17370/default_68a60246a766655932541acc39422873bd51360a.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2017-09-08 08:09:46.000000000 Z
+- name: angular-messages
+  description: AngularJS module that provides enhanced support for displaying messages
+    within templates
+  package_url: https://www.npmjs.com/angular-messages
+  version: 1.6.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18626/default_f08fa0a5a2e5778c1a6aba47e2cc0d4e736fc68a.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2017-09-08 08:09:46.000000000 Z
+- name: angular-mocks
+  description: AngularJS mocks for testing
+  package_url: https://www.npmjs.com/angular-mocks
+  version: 1.6.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16492/default_2d1a470f86144a45b7e94185b9a5aecb5ebb69f4.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2017-09-08 08:09:46.000000000 Z
+- name: babel-core
+  description: Babel compiler core
+  package_url: https://www.npmjs.com/babel-core
+  version: 6.26.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15798/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2017-06-19 14:54:10.000000000 Z
+- name: babel-loader
+  description: Babel module loader for webpack
+  package_url: https://www.npmjs.com/babel-loader
+  version: 6.4.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15800/default_4acafe585186b4157fa23322ae7ca89e24b5cdef.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2017-06-19 14:54:10.000000000 Z
+- name: babel-plugin-transform-runtime
+  description: Externalise references to helpers and builtins
+  package_url: https://www.npmjs.com/babel-plugin-transform-runtime
+  version: 6.23.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15849/default_b71c906aeda030a5e2f1fe40bf12a93be52404ab.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2017-06-19 14:54:10.000000000 Z
+- name: babel-polyfill
+  description: Provides polyfills necessary for a full ES2015+ environment
+  package_url: https://www.npmjs.com/babel-polyfill
+  version: 6.26.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15867/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2017-06-19 14:54:10.000000000 Z
+- name: babel-preset-stage-0
+  description: Babel preset for stage 0 plugins
+  package_url: https://www.npmjs.com/babel-preset-stage-0
+  version: 6.24.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15846/default_0b10af8ca19c215f781dc07442e75bdc831089d0.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2017-06-19 14:54:10.000000000 Z
+- name: babel-register
+  description: Babel require hook
+  package_url: https://www.npmjs.com/babel-register
+  version: 6.26.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15865/default_3af1504b6f77c55205ba630fe08c472f43b95f6e.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2017-06-19 14:54:10.000000000 Z
+- name: babel-runtime
+  description: Babel selfContained runtime
+  package_url: https://www.npmjs.com/babel-runtime
+  version: 6.26.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15861/default_4dc9671df0093fd7061f6455afdf054e6cc9dacb.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2017-06-19 14:54:10.000000000 Z
+- name: browser-sync
+  description: Live CSS Reload &amp; Browser Syncing
+  package_url: https://www.npmjs.com/browser-sync
+  version: 2.18.13
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16034/default_a9b6ac3c2fe43713f9a8e43d4668d0352ad0d247.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-09-14 09:02:07.000000000 Z
+- name: connect-history-api-fallback
+  description: Provides a fallback for non-existing directories so that the HTML 5
+    history API can be used
+  package_url: https://www.npmjs.com/connect-history-api-fallback
+  version: 1.3.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16214/default_180418c6fa6cdb8f7a3500f84a8fedb884fcb3fa.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-12-25 11:19:25.000000000 Z
+- name: del
+  description: Delete files and directories
+  package_url: https://www.npmjs.com/del
+  version: 2.2.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15907/default_a582b9fecca65f37fe68520c8f84d3bcae35db24.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-09-14 09:02:07.000000000 Z
+- name: extract-text-webpack-plugin
+  description: Extract text from bundle into a file
+  package_url: https://www.npmjs.com/extract-text-webpack-plugin
+  version: 1.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15855/default_a2f722724df977d0f7752839e5d8845ab41f69d5.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2017-06-19 14:54:10.000000000 Z
+- name: file-loader
+  description: A file loader module for webpack
+  package_url: https://www.npmjs.com/file-loader
+  version: 0.9.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15834/default_4479dbac220be99e50e724b2df6cf415241d71fd.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-12-25 11:19:25.000000000 Z
+- name: font-awesome
+  description: The iconic font and CSS framework
+  package_url: https://www.npmjs.com/font-awesome
+  version: 4.7.0
+  license: OFL-1.1,MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16160/default_77b54a203c743d16eddb6b6390cba17218454fa0.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-12-25 11:19:25.000000000 Z
+- name: gulp-rename
+  description: Rename files
+  package_url: https://www.npmjs.com/gulp-rename
+  version: 1.2.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15895/default_e4668902f8489350db9b0fb228523a571ef05b26.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-12-26 02:43:41.000000000 Z
+- name: gulp-template
+  description: Render/precompile Lodash/Underscore templates
+  package_url: https://www.npmjs.com/gulp-template
+  version: 3.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16872/default_21db97bdb9f4092d80f256d3afec4658fbafe443.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-12-26 02:43:41.000000000 Z
+- name: gulp-util
+  description: Utility functions for gulp plugins
+  package_url: https://www.npmjs.com/gulp-util
+  version: 3.0.8
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15912/default_b45165a5d30e541ab11711a34a78209b3e8ed7fd.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-12-26 02:43:41.000000000 Z
+- name: html-webpack-plugin
+  description: Simplifies creation of HTML files to serve your webpack bundles
+  package_url: https://www.npmjs.com/html-webpack-plugin
+  version: 1.7.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15841/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2017-06-19 14:54:10.000000000 Z
+- name: json-loader
+  description: Json loader module for webpack
+  package_url: https://www.npmjs.com/json-loader
+  version: 0.5.7
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15995/default_200de1a6fc4121e019ce4a5b0cf9ad37c7756e2d.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-10-29 05:36:15.000000000 Z
+- name: karma-chai
+  description: Chai for Karma
+  package_url: https://www.npmjs.com/karma-chai
+  version: 0.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16177/default_9a7a7dcd69c12c746dc4000dc4d1b75758079c9f.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-12-26 02:43:41.000000000 Z
+- name: karma-chrome-launcher
+  description: A Karma plugin. Launcher for Chrome and Chrome Canary
+  package_url: https://www.npmjs.com/karma-chrome-launcher
+  version: 0.2.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15860/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-12-26 02:43:41.000000000 Z
+- name: karma-mocha
+  description: A Karma plugin. Adapter for Mocha testing framework
+  package_url: https://www.npmjs.com/karma-mocha
+  version: 0.2.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15962/default_732016a20524708efe7a4c77497fe9bfeea19ba6.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2017-09-08 08:09:46.000000000 Z
+- name: karma-mocha-reporter
+  description: Karma reporter with mocha style logging
+  package_url: https://www.npmjs.com/karma-mocha-reporter
+  version: 1.3.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16127/default_77b54a203c743d16eddb6b6390cba17218454fa0.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2017-09-08 08:09:46.000000000 Z
+- name: karma-sourcemap-loader
+  description: Karma plugin that locates and loads existing javascript source map
+    files
+  package_url: https://www.npmjs.com/karma-sourcemap-loader
+  version: 0.3.7
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16011/default_7a465bc85b23fd837cbc038fd1d504632c41a884.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-12-26 02:43:41.000000000 Z
+- name: karma-webpack
+  description: Use webpack with karma
+  package_url: https://www.npmjs.com/karma-webpack
+  version: 1.8.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15955/default_f49d4c116f8ea0155f4d92673b084378bba02760.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-12-26 02:43:41.000000000 Z
+- name: node-libs-browser
+  description: The node core libs for in browser usage
+  package_url: https://www.npmjs.com/node-libs-browser
+  version: 0.5.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16576/default_ebd83b4f0415be108d977ea72558b13fd7c5283d.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-09-22 09:15:47.000000000 Z
+- name: node-sass
+  description: Wrapper around libsass
+  package_url: https://www.npmjs.com/node-sass
+  version: 3.13.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15827/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-09-22 09:15:47.000000000 Z
+  vulnerabilities:
+  - name: Improper Certificate Validation in node-sass
+    cve_id: CVE-2020-24025
+    cve_url: https://github.com/advisories/GHSA-r8f7-9pfq-mjmv
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 7.0.0
+  - name: Denial of Service in node-sass
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-9v62-24cr-58cx
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 4.13.1
+- name: popper.js
+  description: A kickass library to manage your poppers
+  package_url: https://www.npmjs.com/popper.js
+  version: 1.12.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16357/default_c47f6a56d74fae4d4404d77067b2fa35da6f1924.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2017-09-08 08:09:46.000000000 Z
+- name: raw-loader
+  description: A loader for webpack that allows importing files as a String
+  package_url: https://www.npmjs.com/raw-loader
+  version: 0.5.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16030/default_7a465bc85b23fd837cbc038fd1d504632c41a884.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-10-29 05:36:15.000000000 Z
+- name: resolve-url-loader
+  description: Webpack loader that resolves relative paths in url
+  package_url: https://www.npmjs.com/resolve-url-loader
+  version: 1.6.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16468/default_73c88a18b684e01cbdbf945631a40a44aff5a777.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-10-29 05:36:15.000000000 Z
+- name: run-sequence
+  description: Run a series of dependent gulp tasks in order
+  package_url: https://www.npmjs.com/run-sequence
+  version: 1.2.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16004/default_f8be85789693a9901dbcfa43c135c60525ae49a1.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-09-14 09:02:07.000000000 Z
+- name: sass-loader
+  description: Sass loader for webpack
+  package_url: https://www.npmjs.com/sass-loader
+  version: 4.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15842/default_b71c906aeda030a5e2f1fe40bf12a93be52404ab.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-10-29 05:36:15.000000000 Z
+- name: style-loader
+  description: Style loader module for webpack
+  package_url: https://www.npmjs.com/style-loader
+  version: 0.12.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15822/default_004658cda9b38934f2871435e9dc15608c86e8be.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-12-25 11:19:25.000000000 Z
+- name: supports-color
+  description: Detect whether a terminal supports color
+  package_url: https://www.npmjs.com/supports-color
+  version: 2.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17084/default_23002b02644a8cb313a0f53f43df271731022a9e.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-09-14 09:02:07.000000000 Z
+- name: url-loader
+  description: A loader for webpack which transforms files into base64 URIs
+  package_url: https://www.npmjs.com/url-loader
+  version: 0.5.9
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15858/default_a2f722724df977d0f7752839e5d8845ab41f69d5.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-10-29 05:36:15.000000000 Z
+- name: webpack-dev-middleware
+  description: A development middleware for webpack
+  package_url: https://www.npmjs.com/webpack-dev-middleware
+  version: 1.12.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16020/default_924b66c04aa848a4028c1a5753a23dae0f835f86.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-12-26 02:43:41.000000000 Z
+- name: webpack-hot-middleware
+  description: Webpack hot reloading you can attach to your own server
+  package_url: https://www.npmjs.com/webpack-hot-middleware
+  version: 2.19.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16052/default_261820f5687b4c88a3e8f95c71b5e8dccd34c1d7.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-12-26 02:43:41.000000000 Z
+- name: yargs
+  description: Yargs the modern, pirate-themed, successor to optimist
+  package_url: https://www.npmjs.com/yargs
+  version: 3.29.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15887/default_3af1504b6f77c55205ba630fe08c472f43b95f6e.png
+  detection_source_url: https://github.com/hantsy/angular-es6-sample/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: hantsy
+  last_updated_on: 2016-09-14 09:02:07.000000000 Z
